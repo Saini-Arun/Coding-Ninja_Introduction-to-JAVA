@@ -1,0 +1,20 @@
+public class Solution {
+	
+	public static String minLengthWord(String input){
+		
+        String[] arr=input.split(" ");
+        int i=0;
+        int minlength;
+        minlength=Integer.MAX_VALUE;
+        String largest,smallest;
+        largest = smallest = "";
+        for(i=0;i<arr.length;i++){
+            if(arr[i].length() < minlength){
+                smallest=arr[i];
+                minlength=arr[i].length();
+            } 
+          }
+       return smallest;
+
+	}
+}
